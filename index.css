@@ -1,0 +1,294 @@
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+
+.front header{
+    min-height: 140.55px;
+    height: 15%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto;
+    flex-wrap: wrap;
+    z-index: 2;
+}
+
+canvas {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.front {
+    background: linear-gradient(to top, black, white);
+    width: 100%;
+    height: 100vh;
+    z-index: 2;
+}
+
+.front img {
+    height: 100%;
+    margin: 10px 20px;
+    border-radius: 1000px;
+    z-index: 2;
+}
+
+.front ul{
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: center;
+    margin: 10px;
+    z-index: 2;
+}
+
+.front a{
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 1000px;
+    border: 1px solid black;
+    font-weight: 700;
+    color: black;
+    transition: all 210ms ease;
+    z-index: 2;
+}
+
+.front a:hover{
+    background-color: gray;
+    z-index: 2;
+}
+
+.front li{
+    margin: 11px 10px;
+    z-index: 2;
+}
+
+.front section{
+    width: 90%;
+    margin: 0 auto;
+    height: 85%;
+    display: flex;
+    align-items: center;
+    z-index: 2;
+}
+
+.firsthalf{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin-left: 20px;
+    z-index: 0;
+}
+
+.firsthalf h1{
+    font-size: 50px;
+    min-width: 300px;
+    z-index: 0;
+}
+
+.imp{
+    color: maroon;
+    font-weight: 900;
+    z-index: 2
+}
+
+.firsthalf p{
+    max-width: 400px;
+    min-width: 223px;
+    color: white;
+    z-index: 2;
+}
+
+.projects {
+    display: flex;
+    flex-direction: column;
+    height: 926px;
+    width: 100%;
+    margin: 0 auto;
+    background: black;
+}
+
+.projects header{
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: white;
+}
+
+.projects section{
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.project {
+    height: 30%;
+    width: 90%;
+    margin: 0 auto;
+    border: 1px solid black;
+    border-radius: 10px;
+    display: flex;
+    overflow: hidden;
+    justify-content: center;
+    max-width: 590px;
+    box-shadow: 0px 2px 20px white;
+    position: relative;
+    background: gray;
+    z-index: 3;
+}
+
+.project img{
+    height: 140%;
+    transition: all 210ms ease;
+    z-index: 3;
+}
+
+.project:hover {
+    transition: 210ms ease;
+}
+
+.project:hover img{
+    transform: scale(1.1);
+    filter: blur(5px);
+    opacity: 0;
+}
+
+.textimg{
+    position: absolute;
+    left: 40px;
+    top: 40px;
+    width: 80%;
+}
+
+.textimg h3 {
+    color: white;
+}
+
+.textimg p {
+    color: white;
+}
+
+.textimg h1{
+    color: white;
+}
+
+.languagep{
+    background: linear-gradient(to bottom, black, white);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+.languagep header{
+    padding: 20px;
+    color: white;
+}
+
+.languagep h1{
+    text-align: center;
+}
+
+.languagep section{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.languagecontainer {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+}
+
+.lci{
+    transform: scale(1);
+    transition: all 210ms ease;
+}
+
+.lci:hover{
+    transform: scale(0.9);
+    filter: brightness(0.8);
+}
+
+.te{
+    margin: 20px;
+    text-align: center;
+}
+
+.te nav{
+    margin: 20px;
+}
+
+.te p{
+    margin: 20px;
+}
+
+.te ul{
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.te li{
+    margin: 10px 10px;
+}
+
+.te a{
+    color: black;
+    font-weight: 700;
+    text-decoration: none;
+    transition: 210ms;
+}
+
+li a:hover{
+    color: maroon;
+}
+
+#namer{
+    animation: namerz 1.5s;
+    display: inline-block;
+    font-size: 3em;
+}
+
+@keyframes namerz{
+    0%{
+        opacity: 0;
+        transform: translateY(300px);
+    }
+    20%{
+        opacity: 1;
+    }
+    100%{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+header, p, h1, h3 {
+    animation: full 3s;
+}
+
+@keyframes full{
+    0%{
+        opacity: 0;
+    }
+    30%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+
