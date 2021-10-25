@@ -85,13 +85,13 @@ canvas {
     flex-direction: column;
     width: 50%;
     margin-left: 20px;
-    z-index: 0;
+    z-index: 2;
 }
 
 .firsthalf h1{
     font-size: 50px;
     min-width: 300px;
-    z-index: 0;
+    z-index: 2;
 }
 
 .imp{
