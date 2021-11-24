@@ -95,7 +95,7 @@ canvas {
 }
 
 .imp{
-    color: maroon;
+    color: darkred;
     font-weight: 900;
     z-index: 2
 }
@@ -253,7 +253,7 @@ canvas {
 }
 
 li a:hover{
-    color: maroon;
+    color: darkred;
 }
 
 #namer{
